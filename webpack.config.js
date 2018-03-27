@@ -3,14 +3,14 @@ const HtmlWebpackPlugIn = require("html-webpack-plugin");
 const ExtractTextWebpack = require("extract-text-webpack-plugin");
 
 const extractPlugIn = new ExtractTextWebpack({
-  filename: "src/css/[name].[chunkhash].css",
+  filename: "src/css/[name].css",
   allChunks: true
 });
 
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.[chunkhash].js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
   },
   module: {
@@ -21,7 +21,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["env"]
+            presets: ["es2015", "react"]
           }
         }
       },

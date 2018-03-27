@@ -1,6 +1,9 @@
 @import "theme";
+@import "bootstrap";
 
 body {
-  background-color: $primary-color;
-  color: $secondary-color;
+  // background-color: $primary-color;
+  // color: $secondary-color;
+  // font-family: $primary-font;
+  font-weight: 300;
 }
