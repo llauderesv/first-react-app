@@ -6656,3 +6656,68 @@ a.text-dark:focus, a.text-dark:hover {
     border: 1px solid #ddd !important; } }
 body {
   font-weight: 300; }
+
+.card-view {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #efefef;
+  margin: 10px 0 10px 0;
+  box-shadow: 3px 4px 10px #c6c6c6; }
+
+.card-view-comment {
+  border-bottom: 1px solid #e4e4e4cc;
+  padding: 10px 0 10px 0; }
+
+.comment {
+  font-size: 12px;
+  color: #7a7575; }
+
+.date-posted,
+.date-comment {
+  width: 100%;
+  text-align: right;
+  color: #686868;
+  font-size: 10px; }
+
+.posts {
+  color: #000; }
+
+.likes-comments-container {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+  padding: 0 5px 0 5px; }
+
+.likes {
+  border-right: 1px solid #efefef; }
+
+.likes,
+.comments {
+  font-size: 10px;
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  float: left;
+  width: 50%;
+  padding-left: 10px; }
+  .likes .likes-val,
+  .likes .comments-val,
+  .comments .likes-val,
+  .comments .comments-val {
+    font-weight: 700;
+    color: #007bff; }
+
+.avatar {
+  width: 100%; }
+  .avatar .avatar-image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #efefef;
+    float: left; }
+  .avatar .user-name {
+    font-weight: 400;
+    font-size: 14px;
+    width: 50%;
+    margin-right: 10px;
+    color: #007bff; }

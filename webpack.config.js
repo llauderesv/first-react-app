@@ -8,6 +8,11 @@ const extractPlugIn = new ExtractTextWebpack({
 });
 
 module.exports = {
+  mode: "development",
+  devServer: {
+    port: 3000,
+    compress: true
+  },
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
